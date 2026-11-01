@@ -76,7 +76,7 @@ Kembali ke awal,,,`
 
     if (judul === "Ayi Mato Darah") {
         return {
-            judul: "AAyi Mato Darah",
+            judul: "Ayi Mato Darah",
             daerah: "Kerinci, Jambi",
             pencipta: "Belum tersedia",
             vokalis: "Eka Diana",
