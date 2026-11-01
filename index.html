@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chord Lagu Daerah Nusantara</title>
+
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Bagian Navbar -->
+    <header>
+        <div class="logo">🎸 Chord Kerinci</div>
+
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#daftar-lagu">Daftar Lagu</a>
+            <a href="#tentang">Tentang</a>
+        </nav>
+    </header>
+
+    <!-- Bagian Utama -->
+    <section class="hero" id="beranda">
+        <h1>Chord Lagu Daerah Kerinci</h1>
+
+        <p>
+            Temukan lirik dan chord gitar lagu daerah kerinci
+            
+        </p>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Cari judul lagu ..."
+        >
+
+        <button onclick="cariLagu()">Cari Lagu</button>
+    </section>
+
+    <!-- Daftar Lagu -->
+   <div class="song-container" id="songContainer">
+    <!-- Daftar lagu akan dibuat otomatis oleh JavaScript -->
+</div>
+</section>
+
+<!-- Halaman detail lagu -->
+<section class="detail-lagu" id="detailLagu" style="display:none;">
+    <button onclick="tutupLagu()">← Kembali</button>
+
+    <h2 id="judulDetail"></h2>
+    <p id="asalDetail"></p>
+    <p id="infoDetail" style="white-space: pre-line;"></p>
+
+  <div class="chord-box">
+
+    <h3>Chord Gitar</h3>
+
+    <div class="transpose">
+        <button onclick="transposeChord(-1)">−</button>
+
+        <span id="transposeInfo">Nada: Original</span>
+
+        <button onclick="transposeChord(1)">+</button>
+    </div>
+
+    <pre id="isiChord"></pre>
+
+    <button onclick="resetTranspose()" class="reset-btn">
+        Reset Nada
+    </button>
+
+</div>
+</section>
+
+    <!-- Bagian Tentang -->
+    <<section class="tentang" id="tentang">
+
+    <h2>Tentang Chord Lagu Daerah Kerinci</h2>
+
+    <p>
+        Chord Lagu Daerah Kerinci merupakan sebuah website
+        yang dibuat sebagai media informasi dan sarana
+        untuk mengenal kekayaan seni musik tradisional
+        masyarakat Kerinci, Provinsi Jambi.
+    </p>
+
+    <p>
+        Website ini menyediakan kumpulan lagu daerah Kerinci
+        yang dilengkapi dengan lirik dan chord gitar.
+        Melalui website ini, pengunjung dapat mencari,
+        mempelajari, dan memainkan lagu-lagu daerah dengan
+        lebih mudah.
+    </p>
+
+    <p>
+        Selain menjadi media pembelajaran musik, website
+        ini juga bertujuan untuk memperkenalkan budaya
+        Kerinci kepada generasi muda serta masyarakat luas.
+        Dengan memanfaatkan teknologi digital, diharapkan
+        lagu-lagu daerah Kerinci dapat terus dikenal,
+        dipelajari, dan dilestarikan.
+    </p>
+
+    <p>
+        Mari bersama-sama menjaga warisan budaya Kerinci
+        agar tetap hidup dan tidak terlupakan oleh
+        perkembangan zaman.
+    </p>
+
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Chord Kerinci | Cinta Musik Daerah</p>
+    </footer>
+
+    <!-- Menghubungkan JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
