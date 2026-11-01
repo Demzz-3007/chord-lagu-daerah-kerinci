@@ -232,15 +232,15 @@ footer {
 }
 /* Tampilan chord gitar */
 #isiChord {
-    white-space: pre;
-    font-family: "Courier New", monospace;
-    font-size: 15px;
-    line-height: 1.9;
-    overflow-x: auto;
-    padding: 20px;
-    background: #f1f7f3;
-    color: #26352d;
-    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    overflow-x: hidden;
+    font-size: 17px;
+    line-height: 2;
+    padding: 12px;
 }
 
 /* Warna baris chord */
