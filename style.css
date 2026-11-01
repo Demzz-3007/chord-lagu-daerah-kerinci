@@ -256,3 +256,116 @@ footer {
         padding: 12px;
     }
 }
+/* ============================= */
+/* RESPONSIVE UNTUK HP */
+/* ============================= */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+        gap: 12px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .daftar {
+        padding: 30px 15px;
+    }
+
+    .song-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .song-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .detail-lagu {
+        padding: 20px 12px;
+    }
+
+    .chord-box {
+        padding: 12px;
+        overflow: hidden;
+    }
+
+    #isiChord {
+        font-size: 13px;
+        overflow-x: auto;
+        white-space: pre;
+    }
+
+    .tentang {
+        padding: 30px 18px;
+    }
+
+    .tentang p {
+        font-size: 14px;
+        text-align: justify;
+        line-height: 1.8;
+    }
+
+    footer {
+        padding: 20px 10px;
+        font-size: 13px;
+    }
+
+    input {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* RESPONSIVE UNTUK HP KECIL */
+
+@media screen and (max-width: 400px) {
+
+    .hero h1 {
+        font-size: 23px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    #isiChord {
+        font-size: 12px;
+    }
+}
